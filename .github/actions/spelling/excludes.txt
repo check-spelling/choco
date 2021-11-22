@@ -1,0 +1,24 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-excludes
+(?:^|/)(?i)COPYRIGHT
+(?:^|/)(?i)LICEN[CS]E
+(?:^|/)package(?:-lock|)\.json$
+(?:^|/)vendor/
+ignore$
+\.avi$
+\.dll$
+\.exe$
+\.gif$
+\.ico$
+\.jpe?g$
+\.lock$
+\.map$
+\.min\..
+\.mod$
+\.mp[34]$
+\.pdb$
+\.png$
+\.rtf$
+\.wav$
+^\.github/
+^\Qchocolatey.snk\E$
+^\Qlib/ILMerge/ILMerge.doc\E$
