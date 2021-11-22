@@ -141,7 +141,7 @@
   <property name="msbuild.configuration" value="Release" overwrite="false" />
   <property name="msbuild.platform" value="Any CPU" overwrite="false" />
   <!-- Mixed Platforms is the default 4.0 build platform -->
-  <!-- This setting allows you to use your own output path by setting to false - this does not work in conjuction with multitargeting -->
+  <!-- This setting allows you to use your own output path by setting to false - this does not work in conjunction with multitargeting -->
   <property name="msbuild.override_output_path" value="true" overwrite="false" />
 
   <!-- Application Defaults -->
