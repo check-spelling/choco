@@ -148,7 +148,7 @@ Install-ChocolateyPackage @packageArgs # https://docs.chocolatey.org/en-us/creat
 ## - https://docs.chocolatey.org/en-us/create/functions/install-chocolateyfileassociation
 #Install-ChocolateyFileAssociation
 
-## Adding a shim when not automatically found - Cocolatey automatically shims exe files found in package directory.
+## Adding a shim when not automatically found - Chocolatey automatically shims exe files found in package directory.
 ## - https://docs.chocolatey.org/en-us/create/functions/install-binfile
 ## - https://docs.chocolatey.org/en-us/create/create-packages#how-do-i-exclude-executables-from-getting-shims
 #Install-BinFile

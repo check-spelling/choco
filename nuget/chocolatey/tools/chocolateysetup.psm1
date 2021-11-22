@@ -714,7 +714,7 @@ function Invoke-Chocolatey-Initial {
     & $chocoExe -v | Out-Null
     Write-Debug "Chocolatey execution completed successfully."
   } catch {
-    Write-ChocolateyWarning "Unable to run Chocolately at this time.  It is likely that .Net Framework installation requires a system reboot"
+    Write-ChocolateyWarning "Unable to run Chocolatey at this time.  It is likely that .Net Framework installation requires a system reboot"
   }
 }
 
