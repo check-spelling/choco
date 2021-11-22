@@ -727,7 +727,7 @@ namespace chocolatey.tests.integration.scenarios
         }
 
         [Concern(typeof(ChocolateyUpgradeCommand))]
-        public class when_upgrading_an_existing_prerelease_package_with_prerelease_available_with_excludeprelease_and_without_prerelease_specified : ScenariosBase
+        public class when_upgrading_an_existing_prerelease_package_with_prerelease_available_with_excludeprerelease_and_without_prerelease_specified : ScenariosBase
         {
             private PackageResult _packageResult;
 
@@ -820,7 +820,7 @@ namespace chocolatey.tests.integration.scenarios
         } 
         
         [Concern(typeof(ChocolateyUpgradeCommand))]
-        public class when_upgrading_an_existing_prerelease_package_with_allow_downgrade_with_excludeprelease_and_without_prerelease_specified : ScenariosBase
+        public class when_upgrading_an_existing_prerelease_package_with_allow_downgrade_with_excludeprerelease_and_without_prerelease_specified : ScenariosBase
         {
             private PackageResult _packageResult;
 
