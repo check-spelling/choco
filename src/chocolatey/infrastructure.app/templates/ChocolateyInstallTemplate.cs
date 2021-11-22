@@ -112,7 +112,7 @@ Install-ChocolateyPackage @packageArgs # https://docs.chocolatey.org/en-us/creat
 #Install-ChocolateyInstallPackage $packageName $fileType $silentArgs '_FULLFILEPATH_' -validExitCodes $validExitCodes
 
 ## Unzips a file to the specified location - auto overwrites existing content
-## - https://docs.chocolatey.org/en-us/create/functions/get-chocolateyunzipp
+## - https://docs.chocolatey.org/en-us/create/functions/get-chocolateyunzip
 #Get-ChocolateyUnzip ""FULL_LOCATION_TO_ZIP.zip"" $toolsDir
 
 ## Runs processes asserting UAC, will assert administrative rights - used by Install-ChocolateyInstallPackage
