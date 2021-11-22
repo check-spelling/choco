@@ -22,7 +22,7 @@ Copyright (C) 2005 Microsoft Corporation. All rights reserved.
     <ExeProjectOutputDirInsideProject Condition="'$(ExeProjectOutputDirInsideProject)' == ''">$(ExeProjectOutputDirInsideProjectDefault)</ExeProjectOutputDirInsideProject>
     <ExeProjectOutputDir>$(MSBuildProjectDirectory)</ExeProjectOutputDir>
     <ExeProjectOutputDir Condition="!$(ExeProjectOutputDirInsideProject)">$(OutDir)_PublishedApplications\$(MSBuildProjectName)</ExeProjectOutputDir>
-    <DisableLinkInCopyExeApplicaton Condition="'$(DisableLinkInCopyExeApplicaton)'==''">False</DisableLinkInCopyExeApplicaton>
+    <DisableLinkInCopyExeApplication Condition="'$(DisableLinkInCopyExeApplication)'==''">False</DisableLinkInCopyExeApplication>
     <Disable_CopyExeApplication Condition="'$(Disable_CopyExeApplication)' == ''">False</Disable_CopyExeApplication>
     <CleanExeProjectOutputDir>True</CleanExeProjectOutputDir>
     <CleanExeProjectOutputDir Condition="$(ExeProjectOutputDirInsideProject)" >False</CleanExeProjectOutputDir>
@@ -173,7 +173,7 @@ Copyright (C) 2005 Microsoft Corporation. All rights reserved.
     <Copy SourceFiles="@(Content)" Condition="'%(Content.Link)' == ''"
           DestinationFolder="$(ExeProjectOutputDir)\%(Content.RelativeDir)"
           SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(Content)" Condition="!$(DisableLinkInCopyExeApplicaton) And '%(Content.Link)' != ''"
+    <Copy SourceFiles="@(Content)" Condition="!$(DisableLinkInCopyExeApplication) And '%(Content.Link)' != ''"
           DestinationFiles="$(ExeProjectOutputDir)\%(Content.Link)"
           SkipUnchangedFiles="true"/>
 
