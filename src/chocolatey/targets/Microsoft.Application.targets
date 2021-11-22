@@ -86,7 +86,7 @@ Copyright (C) 2005 Microsoft Corporation. All rights reserved.
 	to a folder other than ~\bin such as is the case with Team Build.
   
   The original _CopyExeApplication is now a Legacy, you can still use it by setting $(UseWPP_CopyExeApplication) to true.
-  By default, it now change to use _WPPCopyWebApplication target in Microsoft.Web.Publish.targets.   It allow to leverage the app.config trsnaformation.
+  By default, it now change to use _WPPCopyWebApplication target in Microsoft.Web.Publish.targets.   It allow to leverage the app.config transformation.
 	============================================================
 	-->
 
