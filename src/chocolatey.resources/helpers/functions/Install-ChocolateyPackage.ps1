@@ -371,8 +371,8 @@ param(
 
   Write-FunctionCallLogMessage -Invocation $MyInvocation -Parameters $PSBoundParameters
 
-  $chocTempDir = $env:TEMP
-  $tempDir = Join-Path $chocTempDir "$($env:chocolateyPackageName)"
+  $chocoTempDir = $env:TEMP
+  $tempDir = Join-Path $chocoTempDir "$($env:chocolateyPackageName)"
   if ($env:chocolateyPackageVersion -ne $null) { $tempDir = Join-Path $tempDir "$($env:chocolateyPackageVersion)"; }
   $tempDir = $tempDir -replace '\\chocolatey\\chocolatey\\', '\chocolatey\'
   if (![System.IO.Directory]::Exists($tempDir)) { [System.IO.Directory]::CreateDirectory($tempDir) | Out-Null }
