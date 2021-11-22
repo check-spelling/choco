@@ -248,7 +248,7 @@ namespace chocolatey.infrastructure.filesystem
         FileStream open_file_readonly(string filePath);
 
         /// <summary>
-        ///   Opens a file exlusively
+        ///   Opens a file exclusively
         /// </summary>
         /// <param name="filePath">Path to the file name</param>
         /// <returns>A file stream object for use after accessing the file</returns>
