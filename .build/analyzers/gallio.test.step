@@ -44,7 +44,7 @@
             verbosity="Normal"
             echo-results="true"
             run-time-limit="${time.limit.in.seconds}"
-            filter="exclude Category:Database or Category:Integration or Category:Slow or Category:NotWorking or Category:Ignore or Category:database or Category:integration or Category:slow or Category:notworking or Categroy:ignore"
+            filter="exclude Category:Database or Category:Integration or Category:Slow or Category:NotWorking or Category:Ignore or Category:database or Category:integration or Category:slow or Category:notworking or Category:ignore"
             >
       <files>
         <exclude name="${dirs.build.code}${path.separator}lib${path.separator}**" />

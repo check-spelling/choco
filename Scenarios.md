@@ -1046,7 +1046,7 @@
  * should not have warning package result
  * should not remove the package from the lib directory
 
-#### when upgrading an existing prerelease package with allow downgrade with excludeprelease and without prerelease specified
+#### when upgrading an existing prerelease package with allow downgrade with excludeprerelease and without prerelease specified
 
  * should be the same version of the package
  * should contain a message that no packages were upgraded
@@ -1058,7 +1058,7 @@
  * should not remove the package from the lib directory
  * should only find the last stable version
 
-#### when upgrading an existing prerelease package with prerelease available with excludeprelease and without prerelease specified
+#### when upgrading an existing prerelease package with prerelease available with excludeprerelease and without prerelease specified
 
  * should be the same version of the package
  * should contain a message that no packages were upgraded

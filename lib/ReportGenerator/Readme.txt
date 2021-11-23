@@ -99,7 +99,7 @@ CHANGELOG
 1.8.0.0
 
     * New: Issue #9891: Aggregation of results by namespace
-    * New: Issue #9875: More details and sorting possiblity in summary
+    * New: Issue #9875: More details and sorting possibility in summary
            report
     * New: Issue #9913: Mark of complete line according to coverage
     * New: Issue #9935: In HTMLSummary static text instead of link is

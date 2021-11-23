@@ -165,19 +165,19 @@ function Convert-Syntax($objItem, $hasCmdletBinding) {
 }
 
 function Convert-Parameter($objItem, $commandName) {
-  $parmText = $lineFeed + "###  -$($objItem.name.substring(0,1).ToUpper() + $objItem.name.substring(1))"
+  $paramText = $lineFeed + "###  -$($objItem.name.substring(0,1).ToUpper() + $objItem.name.substring(1))"
   if ( ($objItem.parameterValue -ne $null) -and ($objItem.parameterValue -ne 'SwitchParameter') ) {
-    $parmText += ' '
-    if ([string]($objItem.required) -eq 'false') { $parmText += "["}
-    $parmText += "&lt;$($objItem.parameterValue)&gt;"
-    if ([string]($objItem.required) -eq 'false') { $parmText += "]"}
+    $paramText += ' '
+    if ([string]($objItem.required) -eq 'false') { $paramText += "["}
+    $paramText += "&lt;$($objItem.parameterValue)&gt;"
+    if ([string]($objItem.required) -eq 'false') { $paramText += "]"}
   }
-  $parmText += $lineFeed
+  $paramText += $lineFeed
   if ($objItem.description -ne $null) {
-    $parmText += (($objItem.description | % { Replace-CommonItems $_.Text }) -join "$lineFeed") + $lineFeed + $lineFeed
+    $paramText += (($objItem.description | % { Replace-CommonItems $_.Text }) -join "$lineFeed") + $lineFeed + $lineFeed
   }
   if ($objItem.parameterValueGroup -ne $null) {
-    $parmText += "$($lineFeed)Valid options: " + ($objItem.parameterValueGroup.parameterValue -join ", ") + $lineFeed + $lineFeed
+    $paramText += "$($lineFeed)Valid options: " + ($objItem.parameterValueGroup.parameterValue -join ", ") + $lineFeed + $lineFeed
   }
 
   $aliases = [string]((Get-Command -Name $commandName).parameters."$($objItem.Name)".Aliases -join ', ')
@@ -188,7 +188,7 @@ function Convert-Parameter($objItem, $commandName) {
 
   $padding = ($aliases.Length, $required.Length, $position.Length, $defValue.Length, $acceptPipeline.Length | Measure-Object -Maximum).Maximum
 
-    $parmText += @"
+    $paramText += @"
 Property               | Value
 ---------------------- | $([string]('-' * $padding))
 Aliases                | $($aliases)
@@ -199,7 +199,7 @@ Accept Pipeline Input? | $($acceptPipeline)
 
 "@
 
-  Write-Output $parmText
+  Write-Output $paramText
 }
 
 function Convert-CommandText {
@@ -498,7 +498,7 @@ Some environment variables are set based on options that are passed, configurati
 #### Business Edition Variables
 
  * ChocolateyInstallArgumentsSensitive - Encrypted arguments passed from command line `--install-arguments-sensitive` that are not logged anywhere. (0.10.1+ and licensed editions 1.6.0+)
- * ChocolateyPackageParametersSensitive - Package parameters passed from command line `--package-parameters-senstivite` that are not logged anywhere.  (0.10.1+ and licensed editions 1.6.0+)
+ * ChocolateyPackageParametersSensitive - Package parameters passed from command line `--package-parameters-sensitive` that are not logged anywhere.  (0.10.1+ and licensed editions 1.6.0+)
  * ChocolateyLicensedVersion - What version is the licensed edition on?
  * ChocolateyLicenseType - What edition / type of the licensed edition is installed?
 
