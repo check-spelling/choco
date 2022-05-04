@@ -1,5 +1,6 @@
-name: Improve existing content
-description: Make a suggestion to improve the content in an existing article.
+name: Package - Report Issue / Suggest Missing Package / Package Outdated
+description: Something went wrong with an installation? Want a package to be added to the community repository?
+
 labels:
   - content
 body:
