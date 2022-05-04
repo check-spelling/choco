@@ -20,3 +20,9 @@ body:
 
         NOTE: Keep in mind we have an etiquette regarding communication that we expect folks to observe when they are looking for support in the Chocolatey community. https://github.com/chocolatey/choco/blob/develop/README.md#etiquette-regarding-communication
         
+  - type: textarea
+    attributes:
+      label: Insert explanation for why you didn't read the above
+      description: This field is present to make GitHub happy -- you should not submit a ticket using this form.
+    validations:
+      required: true
